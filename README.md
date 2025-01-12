@@ -91,5 +91,5 @@ The results of the A/B test are summarized in the table below.
 
 The comparison of the 'before' and 'after' treatment periods reveals the changes in CVR (order conversion rate) over time for each group. Using the DiD method, the 50,000 UZS fixed amount coupon shows an 8% increase in CVR, while the 5% off coupon shows an 11% increase compared to the control group.
 
-Although the 5% off coupon shows a higher increase in CVR compared to the fixed amount coupon, the difference of only 3% between the two treatment groups is relatively small. Depending on the specific business context and objectives, the initial hypothesis—that the fixed amount discount (50,000 UZS) would result in a higher order conversion rate compared to the 5% off discount coupon—may either be rejected or accepted. 
+Although the 5% off coupon shows a higher increase in CVR compared to the fixed amount coupon, the difference of only 3% between the two treatment groups is too small. Depending on the specific business context and objectives, the initial hypothesis—that the fixed amount discount (50,000 UZS) would result in a higher order conversion rate compared to the 5% off discount coupon—may either be rejected or accepted. 
 
