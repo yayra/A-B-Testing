@@ -55,7 +55,7 @@ A = count of orders in the treatment group after treatment
 
 **Note**: This analysis focuses on the application of the DiD methodology to the available data, not focusing on population size, sampling methods or data collection procedures for the A/B test itself. 
 
-### 7. About the Dataset
+## About the Dataset
 
 The dataset used for this project consists of two files: *orders.csv* and *coupons.csv*. Below is the metadata for each dataset:
 
@@ -80,13 +80,13 @@ This dataset provides details about customer orders and includes the following c
 **ord_no**: Unique order ID, datatype: int.  
 **ord_dt**: Date the order was placed, datatype: varchar(50).
 
-### 8. Tools Used
+## Tools Used
 The data analysis will be conducted using **MySQL** to explore the datasets and perform the A/B test.
 
 
 
 
-### 9. A/B Test Result
+## A/B Test Result
 The results of the A/B test are summarized in the table below. 
 
 The comparison of the 'before' and 'after' treatment periods reveals the changes in CVR (order conversion rate) over time for each group. Using the DiD method, the 50,000 UZS fixed amount coupon shows an 8% increase in CVR, while the 5% off coupon shows an 11% increase compared to the control group.
