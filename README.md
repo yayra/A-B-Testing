@@ -1,2 +1,86 @@
-# A-B-Testing
-Evaluating the Impact of Discount Coupon Types on Order Conversion Rate: A/B Testing with Difference-in-Differences Methodology
+# Evaluating the Impact of Discount Coupon Types on Order Conversion Rates: *A/B Testing with Difference-in-Differences (DiD) Method*
+## Background
+<p align="justify"> In the competitive world of online business, increasing customer conversion rates is a key objective for e-commerce websites. One common strategy to boost conversions is by offering discount coupons, which can be presented in two main forms: fixed amount discounts and percentage-off discounts.</p>
+
+<p align="justify"> This project aims to answer the following question: Which type of discount coupon yields a higher order conversion rate – a <b>50,000 UZS fixed amount discount</b> or a <b>5% off discount</b>? </p>
+
+<p align="justify"> The Marketing Department of an e-commerce platform in Uzbekistan is particularly interested in determining which of these two discount strategies is more effective in driving order conversion rates. To assess this, they have implemented an <b>A/B testing</b> and utilized the <b>Difference-in-Differences (DiD)</b> methodology to measure the impact of the two coupon types while excluding potential confounding variables and underlying trends that could affect the results. </p>
+
+## Test Scenario
+
+### 1. Test Participants (300 in total)
+The test involves a total of 300 customers of e-commerce website, divided into two groups:
+- **Control group**: 150 customers who did not receive any discount coupons during the testing period.
+- **Treatment group**: 150 customers who received one of the two types of discount coupons:
+    - *50,000 UZS fixed amount discount* coupon (valid on purchases over 1 million UZS).
+    - *5% off discount* coupon (valid on purchases over 1 million UZS, with a maximum discount of 70,000 UZS).
+
+The following table summarizes the setup:
+
+| Group classification |Discount Type                           | Number of Customers |
+|--------------------|-----------------------------------------|---------------------|
+| Control Group      | No discount                            | 150                  |
+| Treatment Group 1  | 50,000 UZS fixed amount discount        | 150                 |
+| Treatment Group 2  | 5% off discount coupon (up to 70,000 UZS)| 150                |
+
+### 2. Test Period
+The A/B test was conducted from *June 5 to June 18, 2024*, with both types of discount coupons being distributed on June 12, 2024. The timeline is as follows:
+- June 5–11, 2024: Pre-treatment period
+- June 12, 2024: Treatment date (coupon distribution)
+- June 12–18, 2024: Post-treatment period
+
+### 3. Hypothesis testing 
+*Fixed amount discount* coupon (50,000 UZS) will result in a higher order conversion rate compared to the *5% off discount* coupon.
+
+### 4. Dependent Variable
+The dependent variable in this study is the **Conversion Rate (CVR)**, defined as the proportion of customers who placed at least one order either before or after the treatment period.
+
+### 5. Independent Variable
+The independent variable is the type of discount coupon provided:
+- 50,000 UZS fixed amount discount coupon
+- 5% off discount coupon
+
+### 6. A/B Testing Evaluation Method – Difference-in-Differences (DiD)
+The Difference-in-Differences (DiD) method measures the change in order conversion rates for the treatment group before and after the treatment, as well as the change in order conversion rates for the control group over the same period. By comparing these changes, DiD isolates the effect of the other variables which can effect the order conversion rate.
+
+The formula for calculating the DiD is as follows:
+
+DiD = (𝐴 − 𝑎 ) − (𝐵−𝑏)
+
+Where:
+𝑎 = count of orders in the treatment group before treatment
+A = count of orders in the treatment group after treatment
+𝑏 = count of orders in the control group before treatment
+𝐵 = count of orders in the control group after treatment
+
+**Note**: This analysis focuses on the application of the DiD methodology to the available data, not focusing on population size, sampling methods or data collection procedures for the A/B test itself. 
+
+### 7. About the Dataset
+The dataset used for this project consists of two files: *orders.csv* and *coupons.csv*. Below is the metadata for each dataset:
+
+**Coupons Dataset**
+
+This dataset contains information about the distribution of discount coupons and includes the following columns:
+
+**mem_no**: Unique customer ID (primary key), datatype: int.
+**cpn_nm**: Type of distributed coupon (5% off coupon or 50,000 UZS fixed amount coupon), datatype: varchar(50).
+**cpn_available_amt**: Minimum purchase amount required to use the coupon (1,000,000 UZS), datatype: varchar(50).
+**cpn_issued_dt**: The date the coupons was issued (12 June 2024), datatype varchar(50).
+**group_class**: Group classification for A/B testing: 
+   - CONTROL: Control group (did not receive any coupons).
+   - TEST1_percent: Treatment group that received a 5% off coupon.
+   - TEST1_fixed: Treatment group that received a 50,000 UZS fixed amount coupon.
+
+**Orders Dataset**
+
+This dataset provides details about customer orders and includes the following columns:
+
+**mem_no**: Customer ID (foreign key), datatype: int.
+**ord_no**: Unique order ID, datatype: int.
+**ord_dt**: Date the order was placed, varchar(50).
+
+### 8. Tools Used
+The data analysis will be conducted using **MySQL** to explore the datasets and perform the A/B test.
+
+
+
