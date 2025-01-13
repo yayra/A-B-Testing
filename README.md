@@ -35,7 +35,7 @@ The timeline is as follows:
 *Fixed amount discount* coupon (50,000 UZS) will result in a higher order conversion rate compared to the *5% off discount* coupon.
 
 ### 4. Dependent Variable
-<p align="justify"> The dependent variable in this study is the **Conversion Rate (CVR)**, defined as the proportion of customers who placed at least one order either before or after the treatment period.</p>
+<p align="justify"> The dependent variable in this study is the <b>order conversion rate (Conversion Rate (CVR))</b>, defined as the proportion of customers who placed at least one order either before or after the treatment period.</p>
 
 ### 5. Independent Variable
 The independent variable is the type of discount coupon provided:
