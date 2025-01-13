@@ -24,10 +24,12 @@ The following table summarizes the setup:
 | Treatment Group 2  | 5% off discount coupon (up to 70,000 UZS)| 150                |
 
 ### 2. Test Period
-<p align="justify"> The A/B test was conducted from *June 5 to June 18, 2024*, with both types of discount coupons being distributed on June 12, 2024. The timeline is as follows:</p>
+<p align="justify"> The A/B test was conducted from <b>June 5 to June 18, 2024</b>, with both types of discount coupons being distributed on June 12, 2024.</p> 
+The timeline is as follows: 
+
 - June 5–11, 2024: Pre-treatment period
 - June 12, 2024: Treatment date (coupon distribution)
-- June 12–18, 2024: Post-treatment period
+- June 12–18, 2024: Post-treatment period. 
 
 ### 3. Hypothesis testing 
 *Fixed amount discount* coupon (50,000 UZS) will result in a higher order conversion rate compared to the *5% off discount* coupon.
@@ -47,13 +49,15 @@ The formula for calculating the DiD is as follows:
 
 **DiD = (𝐴 − 𝑎 ) − (𝐵−𝑏)**
 
-Where:
-𝑎 = count of orders in the treatment group before treatment
-A = count of orders in the treatment group after treatment
-𝑏 = count of orders in the control group before treatment
-𝐵 = count of orders in the control group after treatment
-
-**Note**: This analysis focuses on the application of the DiD methodology to the available data, not focusing on population size, sampling methods or data collection procedures for the A/B test itself. 
+<p>Where:</p>
+<div style="line-height: 1.2; margin-bottom: 15px;">
+    𝑎 = count of orders in the treatment group before treatment;<br>
+    A = count of orders in the treatment group after treatment;<br>
+    𝑏 = count of orders in the control group before treatment;<br>
+    𝐵 = count of orders in the control group after treatment.
+</div>
+<p><b>Note</b>: This analysis focuses on the application of the DiD methodology to the available data, not focusing on population size, sampling methods, or data collection procedures for the A/B test itself.
+</p>
 
 ## About the Dataset
 
@@ -61,7 +65,7 @@ The dataset used for this project consists of two files: *orders.csv* and *coupo
 
 #### **Coupons Dataset**
 
-This dataset contains information about the distribution of discount coupons and includes the following columns:
+<p align="justify">This dataset contains information about the distribution of discount coupons and includes the following columns:
 
 - **mem_no**: Unique customer ID (primary key), datatype: int.  
 - **cpn_nm**: Type of distributed coupon (5% off coupon or 50,000 UZS fixed amount coupon), datatype: varchar(50).  
@@ -70,7 +74,7 @@ This dataset contains information about the distribution of discount coupons and
 - **group_class**: Group classification for A/B testing, datatype: varchar(50):  
   - CONTROL: Control group (did not receive any coupons).  
   - TEST1_percent: Treatment group that received a 5% off coupon.  
-  - TEST1_fixed: Treatment group that received a 50,000 UZS fixed amount coupon.
+  - TEST1_fixed: Treatment group that received a 50,000 UZS fixed amount coupon.</p>
 
 **Orders Dataset**
 
@@ -81,15 +85,22 @@ This dataset provides details about customer orders and includes the following c
 **ord_dt**: Date the order was placed, datatype: varchar(50).
 
 ## Tools Used
-The data analysis will be conducted using **MySQL** to explore the datasets and perform the A/B test.
+**MySQL** will be utilized for data exploration and to conduct the A/B testing.
 
 
 
 
 ## A/B Test Result
-The results of the A/B test are summarized in the table below. 
+<p align="justify"> The results of the A/B test are summarized in the table below, highlighting the changes in CVR (order conversion rate) for each group during the 'before' and 'after' treatment periods.
 
-The comparison of the 'before' and 'after' treatment periods reveals the changes in CVR (order conversion rate) over time for each group. Using the DiD method, the 50,000 UZS fixed amount coupon shows an 8% increase in CVR, while the 5% off coupon shows an 11% increase compared to the control group.
+The comparison of the 'before' and 'after' treatment periods highlights changes in CVR across groups. Using the DiD method:
 
-Although the 5% off coupon shows a higher increase in CVR compared to the fixed amount coupon, the difference of only 3% between the two treatment groups is too small. Depending on the specific business context and objectives, the initial hypothesis—that the fixed amount discount (50,000 UZS) would result in a higher order conversion rate compared to the 5% off discount coupon—may either be rejected or accepted. 
+ - The <b>50,000 UZS fixed amount coupon</b> resulted in an <b>8% increase</b> in CVR compared to the control group.
+ - The <b>5% off coupon</b> demonstrated higher <b>11% increase</b> in CVR relative to the control group.
+
+Although the <b>5% off coupon</b> exhibited a slightly higher CVR increase compared to the fixed amount coupon, the <b>3% difference</b> between the two treatment groups is relatively minor.
+
+While the initial hypothesis suggested that a <b>fixed amount discount (50,000 UZS)</b> would lead to a higher order conversion rate compared to the <b>5% off coupon</b>, the <b>3% difference</b> observed in CVR using the DiD method does not provide strong enough evidence to fully reject this hypothesis.
+
+However, the analysis clearly supports the broader conclusion that <b>offering discounts—regardless of their structure—consistently enhances CVR compared to not providing any discounts</b>.</p>
 
