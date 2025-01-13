@@ -9,12 +9,12 @@
 
 ## Test Scenario
 
-### 1. Test Participants (450 in total)
-The test involves a total of 450 customers of the e-commerce website, divided into two groups:
-- **Control group**: 150 customers who did not receive any discount coupons during the testing period.
-- **Treatment group**: 300 customers who received one of the two types of discount coupons:
-    - *50,000 UZS fixed amount discount* coupon (valid on purchases over 1 million UZS), 150 customers.
-    - *5% off discount* coupon (valid on purchases over 1 million UZS, with a maximum discount of 70,000 UZS), 150 customers.
+### 1. Test Participants (300 in total)
+The test involves a total of 300 customers of the e-commerce website, divided into two groups:
+- **Control group**: 100 customers who did not receive any discount coupons during the testing period.
+- **Treatment group**: 200 customers who received one of the two types of discount coupons:
+    - *50,000 UZS fixed amount discount* coupon (valid on purchases over 1 million UZS), 100 customers.
+    - *5% off discount* coupon (valid on purchases over 1 million UZS, with a maximum discount of 70,000 UZS), 100 customers.
 
 The following table summarizes the setup:
 
@@ -23,6 +23,11 @@ The following table summarizes the setup:
 | Control Group       | No discount                             | 150                 |
 | Treatment Group 1   | 50,000 UZS fixed amount discount        | 150                 |
 | Treatment Group 2   | 5% off discount coupon (up to 70,000 UZS)| 150                |
+
+### 2. Budget Allocated for Conducting the A/B Test
+The Marketing Department secured a budget of no more than **1,000 USD (12 million UZS)**, which was allocated as follows:
+- 5 million UZS for 100 coupons offering a 50,000 UZS fixed amount discount
+- 7 million UZS for 100 coupons offering a 5% off discount (including a maximum discount of 70,000 UZS).
 
 ### 2. Test Period
 <p align="justify">The A/B test was conducted from <b>June 5 to June 18, 2024</b>, with both types of discount coupons being distributed on June 12, 2024.</p>
@@ -58,7 +63,7 @@ The formula for calculating the DiD is as follows:
     𝐵 = count of orders in the control group after treatment.
 </div>
 
-<p><b>Note</b>: This analysis focuses on the application of the DiD methodology to the available data, not focusing on population size, sampling methods, or data collection procedures for the A/B test itself.</p>
+<p><b>Note</b>: This analysis focuses on the application of the DiD methodology in A/B testing within the scenario of a limited budget, which the Marketing Department was able to secure for executing the test, not exceeding 1,000 USD (12 million UZS).</p>
 
 ## About the Dataset
 
