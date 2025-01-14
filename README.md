@@ -1,7 +1,7 @@
 # Evaluating the Impact of Discount Coupon Types on Order Conversion Rates: *A/B Testing with Difference-in-Differences (DiD) Method*
 
 ## Background
-<p align="justify">In the competitive world of online business, increasing customer retention and boosting order conversion rates are key objectives for e-commerce businesses. One common strategy to achieve these goals is by offering discount coupons to retain customers who are at risk of leaving, which can be presented in two main forms: fixed amount discounts and percentage-off discounts.</p>
+<p align="justify">In the competitive world of online business, increasing customer retention and boosting order conversion rates are one of the key objectives for e-commerce businesses. One common strategy to achieve these goals is by offering discount coupons to retain customers who are at risk of leaving, which can be presented in two main forms: fixed amount discounts and percentage-off discounts.</p>
 
 <p align="justify">This project aims to answer the following question: Which type of discount coupon yields a higher order conversion rate – a <b>50,000 UZS fixed amount discount</b> or a <b>5% off discount</b>?</p>
 
@@ -20,9 +20,9 @@ The following table summarizes the setup:
 
 | Group classification | Discount Type                           | Number of Customers |
 |---------------------|-----------------------------------------|---------------------|
-| Control Group       | No discount                             | 150                 |
-| Treatment Group 1   | 50,000 UZS fixed amount discount        | 150                 |
-| Treatment Group 2   | 5% off discount coupon (up to 70,000 UZS)| 150                |
+| Control Group       | No discount                             | 100                 |
+| Treatment Group 1   | 50,000 UZS fixed amount discount        | 100                 |
+| Treatment Group 2   | 5% off discount coupon (up to 70,000 UZS)| 100                |
 
 ### 2. Budget Allocated for Conducting the A/B Test
 The Marketing Department secured a budget of no more than **1,000 USD (12 million UZS)**, which was allocated as follows:
@@ -67,9 +67,9 @@ The formula for calculating the DiD is as follows:
 
 ## About the Dataset
 
-The dataset used for this project consists of two files: *orders.csv* and *coupons.csv*. Below is the metadata for each dataset:
+The dataset used for this project consists of two files: *order_master.csv* and *coupon_target.csv*. Below is the metadata for each dataset:
 
-#### **Coupons Dataset**
+#### *Coupon Dataset*
 
 <p align="justify">This dataset contains information about the distribution of discount coupons and includes the following columns:</p>
 <ul>
@@ -86,7 +86,7 @@ The dataset used for this project consists of two files: *orders.csv* and *coupo
     </li>
 </ul>
 
-#### **Orders Dataset**
+#### *Order Dataset*
 
 <p align="justify">This dataset provides details about customer orders and includes the following columns:</p>
 <ul>
@@ -97,6 +97,8 @@ The dataset used for this project consists of two files: *orders.csv* and *coupo
 
 ## Tools Used
 <p align="justify"><b>MySQL</b> will be utilized for data exploration and to conduct the A/B testing.</p>
+
+<span style="font-style: italic;">MySQL code snippet</span>
 
 ## A/B Test Result
 <p align="justify">The results of the A/B test are summarized in the table below, highlighting the changes in CVR (order conversion rate) for each group during the 'before' and 'after' treatment periods.</p>
