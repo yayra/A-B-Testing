@@ -98,10 +98,18 @@ The dataset used for this project consists of two files: *order_master.csv* and 
 ## Tools Used
 <p align="justify"><b>MySQL</b> will be utilized for data exploration and to conduct the A/B testing.</p>
 
-<span style="font-style: italic;">MySQL code snippet</span>
+<span style="font-style: italic;"> MySQL code snippet: </span>
+
+![A-B_Testing](https://github.com/yayra/Business-Analytics/blob/8cd92fc086c98f92ce0aab4a8b6850ee1b0673a1/A-B_Testing/images/SQL_code.png)
+
+<span style="font-style: italic;"> Output: </span>
+
+![A-B_Testing](https://github.com/yayra/Business-Analytics/blob/8cd92fc086c98f92ce0aab4a8b6850ee1b0673a1/A-B_Testing/images/output.png)
 
 ## A/B Test Result
 <p align="justify">The results of the A/B test are summarized in the table below, highlighting the changes in CVR (order conversion rate) for each group during the 'before' and 'after' treatment periods.</p>
+
+![A-B_Testing](https://github.com/yayra/Business-Analytics/blob/8cd92fc086c98f92ce0aab4a8b6850ee1b0673a1/A-B_Testing/images/DiD_result.png)
 
 <p align="justify">The comparison of the 'before' and 'after' treatment periods highlights changes in order CVR across groups. Using the DiD method:</p>
 
