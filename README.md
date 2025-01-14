@@ -12,9 +12,9 @@
 ### 1. Test Participants (300 in total)
 The test involves a total of 300 customers of the e-commerce website, divided into two groups:
 - **Control group**: 100 customers who did not receive any discount coupons during the testing period.
-- **Treatment group**: 200 customers who placed an order exceeding 1 million UZS between June 5 and June 11, 2024, and received one of two types of discount coupons:
-    - 100 customers: *50,000 UZS fixed amount discount* coupon (valid on purchases over 1 million UZS);
-    - 100 customers: *5% off discount* coupon (valid on purchases over 1 million UZS, with a maximum discount of 70,000 UZS).
+- **Treatment group**: 200 customers who placed an order exceeding 1 million UZS in the month prior to the A/B test were selected and awarded one of two types of discount coupons:
+    - 100 customers: *50,000 UZS fixed amount discount* coupon;
+    - 100 customers: *5% off discount* coupon (maximum amount of discount: 70,000 UZS).
 
 The following table summarizes the setup:
 
